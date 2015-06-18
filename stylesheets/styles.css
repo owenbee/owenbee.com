@@ -1,0 +1,169 @@
+/******
+Fonts
+******/
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+div#content p {
+    font-family: 'Crimson+Text', serif;
+}
+
+/*******
+MOBILE LAYOUT
+*******/
+
+div#wrapper {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+/******
+Top Nav
+******/
+
+a#title {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: 900;
+    margin-top: 25px;
+}
+
+nav#main-nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+}
+
+nav#main-nav ul {
+    display: block;
+    background-color: white;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+nav#main-nav ul li a {
+	text-decoration: none;
+	color: rgba(185, 185, 185, 1);
+}
+
+nav#main-nav ul li a.this-link {
+    color: black;
+}
+
+nav#main-nav ul li a:hover{ 
+	color: rgba(100, 100, 255, 0.5);
+}
+
+nav#main-nav ul li a.this {
+    color: black;
+}
+
+/******
+Content
+******/
+
+div#content {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+div#content span.italic {
+    font-style: italic;
+}
+
+div#content a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+div#content a:hover {
+    color: rgba(100, 100, 255, 0.5);
+}
+
+div#content ul li {
+    margin-bottom: 1em;
+}
+
+div#content img {
+    max-width: 100%;
+}
+
+#index-img {
+    max-width: 100%;
+}
+
+/******
+Social Nav
+******/
+
+nav#social-nav {
+    max-width: 300px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav#social-nav ul {
+    display: flex;
+}
+
+nav#social-nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav#social-nav ul li img {
+    width: 20px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+nav#social-nav ul li img:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+
+
+/*******
+Tablet Layout
+*******/
+
+
+@media screen and (min-width: 500px) {
+
+    div#wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+
+    nav#main-nav ul {
+        display: flex;
+    }
+
+    nav#main-nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+}

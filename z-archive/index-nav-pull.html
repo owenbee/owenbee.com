@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Owen Boochever</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<html>
+	<body>
+
+		<img src="images/background-v3.jpg" id="background-img">
+		
+		<nav class="clearfix">
+    		<a href="#" id="pull">OWEN BOOCHEVER</a>
+    		<ul class="clearfix">
+		        <li><a href="#">About</a></li>
+		        <li><a href="#">Projects</a></li>
+		        <li><a href="#">Stuff I Like</a></li>
+		        <li><a href="#">Elsewhere</a></li>
+    		</ul>
+    		
+		</nav>
+
+
+		<script id="menu-function">
+			$(function() {
+    			var pull = $('#pull');
+        			menu = $('nav ul');
+        			menuHeight = menu.height();
+ 
+    			$(pull).on('click', function(e) {
+        			e.preventDefault();
+        			menu.slideToggle();
+    			});
+			});
+		</script>
+
+	</body>
+
+</html>

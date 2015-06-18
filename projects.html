@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Owen Boochever</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic' rel='stylesheet' type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<html>
+	<body>
+		<div id="wrapper">
+			<a href="index.html" id="title"><h1>OWEN ERNEST BOOCHEVER</h1></a>
+			
+			<nav id="main-nav">
+				<ul>
+			        <li><a href="about.html">ABOUT</a></li>
+			        <li><a href="projects.html" class="this-link">PROJECTS</a></li>
+			        <li><a href="#" class="coming-soon">FAVORITES</a></li>
+			        <li><a href="contact.html">CONTACT</a></li>
+
+	    		</ul>
+			</nav>
+
+			<div id="content">
+				<div class="single-item">
+					
+					<div>
+						<a href="http://weartreats.com/" target="_blank" >
+							<img src="images/treats.jpg">
+						</a>
+						<p>
+							<a href="http://weartreats.com">Treats</a> is my menswear business. Treats designs, manufactures, and retails the best short-sleeve button-down shirts on the planet. I started Treats in 2012.
+						</p>
+					</div>
+					
+					<div>	
+						<a href="#" target="_blank">
+							<img src="images/owen-1.jpg">
+						</a>
+						<p>
+							I run a small photography studio with my friend Max Hawes. If you live in the Bay Area and need help with photography, check it out: <a href="#" target="_blank">The SF Studio</a>.
+						</p>
+					</div>
+				
+				</div>
+			</div>
+
+			<nav id="social-nav">
+				<ul>
+					<li class="social facebook"><a href="https://www.facebook.com/owen.boochever" target="_blank"><img src="images/facebook.png"</a></li>
+			        <li class="social instagram"><a href="https://instagram.com/boochiesgram/" target="_blank"><img src="images/instagram.png"></a></li>
+			        <li class="social twitter"><a href="https://twitter.com/owenbee" target="_blank"><img src="images/twitter-v3.png"></a></li>
+			        <li class="social medium"><a href="https://medium.com/@owenbee" target="_blank"><img src="images/medium.png"></a></li>
+			        <li class="social github"><a href="https://github.com/owenbee" target="_blank"><img src="images/github.png"</a></li>
+			        <li class="social soundcloud"><a href="https://soundcloud.com/owen-ernest-boochever" target="_blank"><img src="images/soundcloud.png"></a></li>
+			        <li class="social linkedin"><a href="https://www.linkedin.com/pub/owen-boochever/39/a28/789" target="_blank"><img src="images/linkedin.png"</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+
+		<script type="text/javascript">
+
+			$(".coming-soon").click(function() {
+				$(this).html("coming soon");
+			});
+
+			$(document).ready(function() {
+  				$(".single-item").slick();
+			});
+
+
+		</script>
+
+	</body>
+
+</html>

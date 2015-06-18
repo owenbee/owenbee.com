@@ -1,0 +1,187 @@
+/******
+Fonts
+******/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*******
+Mobile Layout
+*******/
+
+#background-img {
+    width: 1200px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: -400px;
+}
+
+/* Clearfixes */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 5px 5px 5px;
+    border-bottom: 0;
+    background-color: white;
+}
+
+nav ul {
+    display: none;
+    height: auto;
+    background-color: white;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+nav ul a:hover{ 
+	color: lightblue;
+}
+
+nav a#pull {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+
+nav a#pull:hover {
+    color: gray;
+}
+
+nav span a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+nav span a:hover{
+    color: gray;
+}
+
+nav a#name {
+    float: right;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    margin-right: 12px;
+}
+
+/*******
+Tablet Layout
+*******/
+
+
+@media screen and (min-width: 450px) {
+    #background-img {
+        width: 1200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -350px;
+    }
+}
+
+/*******
+Tablet-Desktop Transition
+*******/
+
+
+@media screen and (min-width: 600px) {
+    #background-img {
+        width: 1200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -150px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        display: inline-block;
+    }
+
+    nav ul li {
+        float: left;
+        padding: 0 10px 10px 0;
+    }
+
+    nav a#pull {
+        display: inline-block;
+        margin-right: 60%;
+    }
+
+}
+
+
+/*******
+Desktop Layout (Narrow)
+*******/
+
+@media screen and (min-width: 900px) {
+    #background-img {
+        width: 1200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -100px;
+    }
+
+
+}
+
+/*******
+Desktop Layout (Wider)
+*******/
+
+@media screen and (min-width: 1101px) {
+    #background-img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/*******
+Desktop Layout (Widest)
+*******/
+
+@media screen and (min-width: 1301px) {
+    #background-img {
+        width: 100%;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
